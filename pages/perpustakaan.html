@@ -8,7 +8,7 @@
 </head>
 <body>
     <div>
-        <nav>
+        <nav  >
             <ul>
                 <li class="logo"><a class="logo-text" href="../index.html">SMK WIKRAMA BOGOR</a></li>
                 <li><a href="jurusan.html">Jurusan</a></li>
@@ -17,7 +17,7 @@
                 <li><a href="matrikulasi.html">Matrikulasi</a></li>
                 <li><a href="sejarah.html">Sejarah Wikrama</a></li>
             </ul>
-        </nav>
+        </nav >
         <div class="header-background-mini">
 
         </div>
@@ -45,7 +45,20 @@
                   
            </div>
     </div>
-    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
     
 </body>
 </html>
